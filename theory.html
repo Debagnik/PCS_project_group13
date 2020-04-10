@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Princeple of control system
+  </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="design.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2|Bellota|Libre+Barcode+128+Text|Londrina+Sketch&display=swap" rel="stylesheet">
+</head>
+
+<body class=body>
+  <h1 class=heading>
+    <center>
+      Write a MATLAB code to plot step response of a second order system with different values of ξ= 0.1, 0.5, 1, 4, 8.<br>
+      T(s)=(100)÷(s2+20ξ+100)
+    </center>
+    <h4 class=heading1>
+      <b>
+        <u>
+          Theory
+        </u>
+      </b>
+    </h4>
+    <div class=para>
+
+      <div class=heading2>Introduction</div><br>
+      The order of a differential equation is the highest degree of derivative present in the given equation. A system in which the input-output equation is a second order differential equation is called Second Order System.<br>
+      <center>
+      <table border=20px>
+        <tr><th>
+          <img src="block1.jpg" height="200px" width="500px">
+        </th></tr>
+      </table></center><p>
+        There are certain factors that make second order systems important. They are very simple and exhibit oscillations and overshoot.All types of higher order systems are based on second order systems. In case of mechanical second order systems, energy is stored in the form of inertia whereas in case of electrical systems, energy can be stored in a capacitor or inductor.
+        Standard form of second order system is given by:<br>
+        <center><img src="equation1.png" height="100" width="300"></center>
+        Where:
+        <ul type="square">
+          <li>ω<sub>n</sub> Is the natural frequency</li>
+          <li>ξ is the damping ratio</li>
+          <li>If 0<ξ< 1, system is named as Damped System</li>
+          <li>If 0<ξ=1, system is named as Critically Damped System</li>
+          <li>If 0<ξ>1, system is named as Over Damped System</li>
+        </ul>
+
+      <div class=heading2>Step Response of Second Order System</div><br>
+      By analysing the step responses in second order system in undamped , underdamped ,critically damped and over damped case, we see the results as:-.<br>
+      <ol type="i">
+        <li><div class=heading3>Critically Damped Case: (ξ=1)</div>
+          <table border="10" align="right"><tr><th>
+            <img src="block2.jpg" height="150" width="300">
+          </th></tr></table>
+          Two poles are equal. That means:<br>
+          s1=s2=-ξω<sub>n</sub><br>
+          In a unit step input, we have:<br>
+          Y(s)=(ω<sub>n</sub><sup>2</sup>)/(s(s+ω<sub>n</sub>)<sup>2</sup>)<br>
+          And output is:<br>
+          R(s)=1/s,<br>
+          Steady-state error: e (∞) = 0<p><br><br>
+        </li>
+        <li><div class=heading3>Over Damped case: (ξ>1)</div>
+          <table border="10" align="right"><tr><th>
+            <img src="block3.jpg" height="150" width="300">
+          </th></tr></table>
+          We can write the transfer function of a second-order system by factoring the denominator as:<br>
+          <center><img src="equation2.png"></center><br>
+          Taking the inverse Laplace transform yields the time response:
+          <center><img src="equation3.png"></center>
+          The unit-step time response is:
+          <center><img src="equation4.png"></center>
+        </li>
+        <li><div class=heading3>Damped case:  (ξ>1)</div>
+          <table border="10" align="right"><tr><th>
+            <img src="block4.jpg" height="150" width="300">
+          </th></tr></table>
+          For a damped case in which 0<ξ< 1 time response is given by:<br>
+          <img src=equation5.png><img src="equation6.png">
+        </li>
+
+    </div>
+    <p>
+      If any problem occurs report <a href="mailto:1804373@kiit.ac.in?Subject=report%20for%20TOC%20page" target="_top">Here</a>
+    <p><p><br><br>
+    <center>
+      <a onkeyup="4" href="code.html">
+        <img src="https://img.icons8.com/flat_round/64/000000/circled-right-2--v1.png" alt="nextico">
+      </a>
+    </center>
+    <p>
+    <p><br><br>
+    <div class=footer>
+      <center> Made with love at KIIT<br>Creative commons no-commercial licenced Copyrighted Debagnik Kar 2020</center>
+    </div>
+  </body>
+</html>
